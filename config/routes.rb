@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root to: 'application#angular'
+  root to: 'home#angular'
 
   resources :posts, only: [:create, :index, :show] do
     resources :comments, only: [:show, :create] do
